@@ -1,35 +1,29 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/sjGoTOz-)
-
 Geo Guesser replica, accessible at https://geoguessing.me.
 
-The Mapillary API will be used to generate street-views of a randomly selected city in the world. User clicks a direction to move, and the street-view will be updated as a single-page application. Real-time enablement implemented to allow a game to be updated if a user plays on multiple devices.
+If prompted for credit card information for Stripe, please use the fake card 4242 4242 4242 4242 for free access.
 
-A game will consist of three rounds. The goal is for the user to guess the location on a map. If the user requires some assistance, a hint button provides aid using AI. At the conclusion of a round, the user can seek further feedback using the AI-review button to learn and improve their guesses.
+You will be shown a street-view of a random city in the world and are allowed to move around.  The goal is to guess the location of the city.  AI hints and review capability exist to help you learn what you may have missed.
 
-Stripe and Google OAuth included. Gemini 3.1 used as AI model. PostgreSQL used for database. Angular-based frontend. RESTful backend. Caddy used for HTTPS encryption and as a reverse proxy. Docker compose used to build Docker containers. Deployed on a Lightsail virtual machine.
+Implementation:
+
+We used the Mapillary API to generate street-views to be displayed on a single-page application.
+
+Real-time enablement implemented to allow games to be synchronized in-time if the same user plays on multiple devices (try it!)
+
+Implemented Stripe for payments (please play our game for free)
+
+Google OAuth implemented for sign-in security.
+
+AI integration done using Gemini 3.1 for user hints.
+
+PostgreSQL database and RESTful backend
+
+Angular-based frontend
+
+Caddy used for HTTPS encryption and as a reverse proxy for our backend
+
+Docker compose used to build Docker containers.  Everything deployed on a virtual machine.
 
 <img width="1879" height="882" alt="image" src="https://github.com/user-attachments/assets/a5654a20-ad3c-4639-96cb-79177c359688" />
 
-Group members: Saran Srishankar srishan3, Ethan Hapurne hapurnee, Charles Yan Zhao zhaoc133
-
-Authentication: Charles
-
-- Google for OAuth
-
-Look and Feel: Ethan and Saran
-
-- Angular frontend
-
-Real-time enablement: Saran
-
-- Mapillary API to provide street-view panoramas. Server-sent events for synchronizing games across multiple devices.
-
-AI Integration with MCP / tool: Saran
-
-- Gemini-3.1-flash-lite used for AI.
-
-Stripe Integration: Charles
-
-Deployment: Ethan
-
-- Lightsail for VM. Docker and Docker compose for deployment. Namecheap for domain name.
+Created by: Saran Srishankar, Ethan Hapurne, Charles Yan Zhao
